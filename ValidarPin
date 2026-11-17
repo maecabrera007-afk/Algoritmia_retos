@@ -1,0 +1,23 @@
+Algoritmo ValidarPIN
+	Definir pin, intentos Como Entero
+	Definir acceso Como Logico
+	
+	intentos <- 0
+	acceso <- falso
+	
+	Repetir
+		Escribir "ingresa tu PIN:"
+		Leer pin
+		intentos <- intentos + 1
+		
+		Si pin = 2580 Entonces
+			acceso <- Verdadero
+		FinSi
+	Hasta Que acceso O intentos = 3
+	
+	Si acceso Entonces
+		Escribir "acceso concedido. Bienvenido."
+	SiNo
+		Escribir "tarjeta bloqueada. Superaste los 3 intentos."
+	FinSi
+FinAlgoritmo

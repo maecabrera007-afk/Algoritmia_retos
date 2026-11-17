@@ -1,0 +1,28 @@
+Algoritmo Calificaciones
+	Definir cantidad, i, aprobados Como Entero
+	Definir nota, suma, promedio Como Real
+	
+	Escribir "cuantas notas vas a ingresar?"
+	Leer cantidad
+	
+	suma <- 0
+	aprobados <- 0
+	
+	Para i <- 1 Hasta cantidad Hacer
+		Escribir "ingresa la nota ", i, ":"
+		Leer nota
+		suma <- suma + nota
+		
+		Si nota >=3.0 Entonces
+			aprobados <- aprobados + 1
+		FinSi
+	FinPara
+	
+	Si cantidad > 0 Entonces
+		promedio <- suma / cantidad
+		Escribir "promedio del grupo: ", promedio
+		Escribir "estudiantes aprobados: ", aprobados
+	SiNo
+		Escribir "no se ingresaron notas."
+	FinSi
+FinAlgoritmo
